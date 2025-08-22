@@ -20,6 +20,7 @@ function calculateResult() {
 
     if (!/^[0-9+\-*/%. ]+$/.test(expression)) {
       display.value = "Math Error";
+      isError = true;
       return;
     }
 
