@@ -1,0 +1,12 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
