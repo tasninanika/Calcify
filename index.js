@@ -28,6 +28,7 @@ function calculateResult() {
 
     if (!isFinite(result)) {
       display.value = "Math Error";
+      isError = true;
     } else {
       display.value = result;
     }
