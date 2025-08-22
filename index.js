@@ -10,8 +10,21 @@ function clearDisplay() {
 
 function calculateResult() {
   try {
-    display.value = eval(display.value);
+    const expression = display.value;
+
+    if (!/^[0-9+\-*/%. ]+$/.test(expression)) {
+      display.value = "Math Error";
+      return;
+    }
+
+    const result = Function(`"use strict"; return (${expression})`)();
+
+    if (!isFinite(result)) {
+      display.value = "Math Error";
+    } else {
+      display.value = result;
+    }
   } catch {
-    display.value = "Error";
+    display.value = "Math Error";
   }
 }
