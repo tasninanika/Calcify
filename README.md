@@ -34,6 +34,6 @@ The app is designed for **desktop and mobile users**, combining aesthetics with 
 
 ---
 
-## 🖼 Screenshots
+## 🖼 Preview Image
 
 ![Calcify Screenshot](assets/preview.PNG)
