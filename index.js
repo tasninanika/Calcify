@@ -34,5 +34,6 @@ function calculateResult() {
     }
   } catch {
     display.value = "Math Error";
+    isError = true;
   }
 }
