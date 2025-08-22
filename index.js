@@ -11,6 +11,7 @@ function append(value) {
 
 function clearDisplay() {
   display.value = "";
+  isError = false;
 }
 
 function calculateResult() {
