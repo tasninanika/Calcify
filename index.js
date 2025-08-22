@@ -19,7 +19,7 @@ function calculateResult() {
     const expression = display.value;
 
     if (!/^[0-9+\-*/%. ]+$/.test(expression)) {
-      display.value = "Math Error";
+      display.value = "Syntax Error";
       isError = true;
       return;
     }
@@ -27,13 +27,13 @@ function calculateResult() {
     const result = Function(`"use strict"; return (${expression})`)();
 
     if (!isFinite(result)) {
-      display.value = "Math Error";
+      display.value = "Syntax Error";
       isError = true;
     } else {
       display.value = result;
     }
   } catch {
-    display.value = "Math Error";
+    display.value = "Syntax Error";
     isError = true;
   }
 }
